@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Twitter-feed Block",
+  "version": "1.0",
+
+  "description": "Blocks all of twitter except direct links to posts.",
+
+  "icons": {
+    "48": "twitter.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://twitter.com/*"],
+      "js": ["twitter_block.js"]
+    }
+  ]
+
+}
